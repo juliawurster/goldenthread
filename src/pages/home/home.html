@@ -1,33 +1,36 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Charity App
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  <ion-icon name="ios-bonfire"></ion-icon>
-  <ion-list inset>
-
-      <ion-item>
-        <ion-label floating stacked>Email</ion-label>
-        <ion-input type="text" value="" placeholder=""></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label floating stacked>Password</ion-label>
-        <ion-input type="password" placeholder=""></ion-input>
-      </ion-item>
-    
-    </ion-list>
-  <button ion-button (click)="navigateToLogin()" outline block large>
-    Login
-    <ion-icon name="md-arrow-dropright-circle" style="padding-left: 3px;"></ion-icon>
-  </button>
-  <button ion-button color="light" outline block>
-    Register
-    <ion-icon name="md-arrow-dropright-circle" style="padding-left: 3px;"></ion-icon>
-  </button>
-
-</ion-content>
+    <ion-navbar>
+      <ion-title>
+        Login/Sign Up
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <button ion-button clear block large round>
+        Charity App
+    </button>
+    <p>Enter your email and password below to log in or sign up.</p>
+    <ion-list inset>
+  
+        <ion-item>
+          <ion-label floating stacked>Email</ion-label>
+          <ion-input type="text" value="" placeholder=""></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating stacked>Password</ion-label>
+          <ion-input type="password" placeholder=""></ion-input>
+        </ion-item>
+      
+      </ion-list>
+    <button ion-button (click)="navigateToLogin()" outline block large>
+      Login
+      <ion-icon name="md-arrow-dropright-circle" style="padding-left: 3px;"></ion-icon>
+    </button>
+    <button ion-button (click)="navigateToRegistration()" color="light" outline block>
+      Register
+      <ion-icon name="md-arrow-dropright-circle" style="padding-left: 3px;"></ion-icon>
+    </button>
+  
+  </ion-content>

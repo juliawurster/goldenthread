@@ -1,0 +1,58 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>
+            Your Profile
+          </ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>
+        <button ion-button clear block large round>
+          Charity App
+        </button>
+        <ion-list inset>
+                <ion-card>
+
+                    <ion-card-header>
+                        Your Name
+                    </ion-card-header>
+                    
+                    <ion-card-content>
+                    </ion-card-content>
+                    
+                </ion-card>
+                <ion-card>
+        
+                    <ion-card-header>
+                        Your Monthly Goal
+                    </ion-card-header>
+                    
+                    <ion-card-content>
+                        graphic displaying goal
+                    </ion-card-content>
+                    
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>
+                        Your Payment Info
+                    </ion-card-header>
+                    
+                    <ion-card-content>
+                        Card ending in 29582404
+                    </ion-card-content>           
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>
+                        Your Account History
+                    </ion-card-header>           
+                    <ion-card-content>
+                        Charities you've donated to
+                    </ion-card-content>           
+                </ion-card>
+          </ion-list>
+        <button ion-button (click)="navigateToLogin()" outline block large>
+          Home
+          <ion-icon name="md-arrow-dropright-circle" style="padding-left: 3px;"></ion-icon>
+        </button>
+      
+      </ion-content>

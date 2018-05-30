@@ -1,0 +1,47 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>
+            Register
+          </ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>
+        <button ion-button clear block large round>
+          Charity App
+        </button>
+        <p>Enter more information below to register an account.</p>
+        <ion-list inset>
+      
+            <ion-item>
+              <ion-label floating stacked>Email</ion-label>
+              <ion-input type="text" value="" placeholder=""></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label floating stacked>Password</ion-label>
+              <ion-input type="password" placeholder=""></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating stacked>Full Name</ion-label>
+                <ion-input type="text" placeholder=""></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating stacked>Date of Birth</ion-label>
+                <ion-input type="text" placeholder=""></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating stacked>Which types of charities are you interested in?</ion-label>
+                <ion-input type="text" placeholder=""></ion-input>
+            </ion-item>
+          
+          </ion-list>
+        <button ion-button (click)="navigateToProfile()" outline block large>
+            Register
+            <ion-icon name="md-arrow-dropright-circle" style="padding-left: 3px;"></ion-icon>
+        </button>
+      
+      </ion-content>
